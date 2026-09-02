@@ -1,0 +1,939 @@
+{
+  "departments": [
+    {
+      "name": "CHAIRMAN",
+      "contacts": [
+        {
+          "name": "Dr. K.K. Varma",
+          "extension": "101",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "MANAGING TRUSTEE",
+      "contacts": [
+        {
+          "name": "Mr.M.G Gopinath",
+          "extension": "175",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "GENERAL MANAGER",
+      "contacts": [
+        {
+          "name": "GP CAPT KVM ASRAF",
+          "extension": "102",
+          "mobile": "5017"
+        },
+        {
+          "name": "GM PA",
+          "extension": "103",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "CHIEF MEDICAL  OFFICER",
+      "contacts": [
+        {
+          "name": "Dr. Prakash V.S",
+          "extension": "160",
+          "mobile": "5004"
+        }
+      ]
+    },
+    {
+      "name": "DOCTORS",
+      "contacts": [
+        {
+          "name": "Dr. Prakash V.S",
+          "extension": "116",
+          "mobile": "5004"
+        },
+        {
+          "name": "Dr. Leila Mohan",
+          "extension": "114",
+          "mobile": "5001"
+        },
+        {
+          "name": "Dr. Leila Mohan",
+          "extension": "152",
+          "mobile": "5034"
+        },
+        {
+          "name": "Dr. Bindu.S. Ajith",
+          "extension": "115",
+          "mobile": "5002"
+        },
+        {
+          "name": "Dr. Vijayalakshmi",
+          "extension": "153",
+          "mobile": "5008"
+        },
+        {
+          "name": "Dr. Seena",
+          "extension": "153",
+          "mobile": "5009"
+        },
+        {
+          "name": "Dr. Dhileesh P",
+          "extension": "162",
+          "mobile": "5075"
+        },
+        {
+          "name": "Dr. Devaki Devi",
+          "extension": "154",
+          "mobile": "5006"
+        },
+        {
+          "name": "Dr. Nisha",
+          "extension": "130",
+          "mobile": "5013"
+        },
+        {
+          "name": "Dr. Vijaykumar",
+          "extension": "-",
+          "mobile": "5003"
+        },
+        {
+          "name": "Dr. Aneesha",
+          "extension": "-",
+          "mobile": "5101"
+        },
+        {
+          "name": "Dr. Shabeeba",
+          "extension": "-",
+          "mobile": "5032"
+        },
+        {
+          "name": "Dr. Jesheena",
+          "extension": "-",
+          "mobile": "5016"
+        },
+        {
+          "name": "Dr. Priya Simon",
+          "extension": "131",
+          "mobile": "5059"
+        },
+        {
+          "name": "Dr. Sangeetha",
+          "extension": "-",
+          "mobile": "5063"
+        },
+        {
+          "name": "Dr. Sugandha  Sinha",
+          "extension": "119",
+          "mobile": "5078"
+        },
+        {
+          "name": "Dr. Nimitha",
+          "extension": "168",
+          "mobile": "5082"
+        },
+        {
+          "name": "Dr. Anju  Chandran",
+          "extension": "195",
+          "mobile": "5055"
+        },
+        {
+          "name": "Dr. Husna",
+          "extension": "-",
+          "mobile": "5094"
+        },
+        {
+          "name": "Dr. Roohi",
+          "extension": "-",
+          "mobile": "5014"
+        },
+        {
+          "name": "Dr. Dwideep",
+          "extension": "-",
+          "mobile": "5068"
+        },
+        {
+          "name": "Dr. Arjun",
+          "extension": "197",
+          "mobile": "5097"
+        },
+        {
+          "name": "Dr. Glaucoma Fellow",
+          "extension": "191",
+          "mobile": "192"
+        },
+        {
+          "name": "Pre Operative Ward Doctor",
+          "extension": "194",
+          "mobile": "-"
+        },
+        {
+          "name": "Dr. Anjana",
+          "extension": "-",
+          "mobile": "5107"
+        },
+        {
+          "name": "Dr. Soumya Nambiar",
+          "extension": "163",
+          "mobile": "5031"
+        },
+        {
+          "name": "Dr. Anjela  Jose",
+          "extension": "190",
+          "mobile": "5081"
+        },
+        {
+          "name": "CMO OFFICE",
+          "extension": "160",
+          "mobile": ""
+        }
+      ]
+    },
+    {
+      "name": "DUTY DOCTOR (NIGHT)",
+      "contacts": [
+        {
+          "name": "DOCTOR",
+          "extension": "167",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "COUNSELING",
+      "contacts": [
+        {
+          "name": "Ms. Suchitra",
+          "extension": "177",
+          "mobile": "5036"
+        },
+        {
+          "name": "Counseling 16 (A WING)",
+          "extension": "180",
+          "mobile": "-"
+        },
+        {
+          "name": "Counseling 33 (A WING)",
+          "extension": "118",
+          "mobile": "-"
+        },
+        {
+          "name": "Counseling 49 (B WING)",
+          "extension": "159",
+          "mobile": "-"
+        },
+        {
+          "name": "Counseling 113 1 st Floor",
+          "extension": "113",
+          "mobile": "176"
+        },
+        {
+          "name": "Counseling 113 1 st Floor",
+          "extension": "189",
+          "mobile": "-"
+        },
+        {
+          "name": "Counselor",
+          "extension": "-",
+          "mobile": "5067"
+        },
+        {
+          "name": "Ms. Manju",
+          "extension": "188",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "IT",
+      "contacts": [
+        {
+          "name": "Mr. Anoop",
+          "extension": "108",
+          "mobile": "5058"
+        },
+        {
+          "name": "Mr. Nithin",
+          "extension": "157",
+          "mobile": "5077"
+        },
+        {
+          "name": "Mr. Bijoy",
+          "extension": "157",
+          "mobile": "5084"
+        }
+      ]
+    },
+    {
+      "name": "BIO MEDICAL",
+      "contacts": [
+        {
+          "name": "Mr. Gladwin",
+          "extension": "165",
+          "mobile": "5086"
+        }
+      ]
+    },
+    {
+      "name": "MAINTENANCE",
+      "contacts": [
+        {
+          "name": "Mr. Arjun",
+          "extension": "140",
+          "mobile": "5019"
+        },
+        {
+          "name": "Mr. Deepesh P",
+          "extension": "140",
+          "mobile": "5020"
+        }
+      ]
+    },
+    {
+      "name": "MRD",
+      "contacts": [
+        {
+          "name": "Ms.Divya",
+          "extension": "174",
+          "mobile": "-"
+        },
+        {
+          "name": "Mr. Baiju",
+          "extension": "-",
+          "mobile": "5087"
+        },
+        {
+          "name": "Mr. Abin",
+          "extension": "-",
+          "mobile": "5080"
+        }
+      ]
+    },
+    {
+      "name": "OP",
+      "contacts": [
+        {
+          "name": "OP 18",
+          "extension": "133",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 19",
+          "extension": "131",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 22",
+          "extension": "132",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 22 A",
+          "extension": "142",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 23",
+          "extension": "130",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 32",
+          "extension": "119",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 35",
+          "extension": "116",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 37",
+          "extension": "162",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 38",
+          "extension": "190",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 50",
+          "extension": "154",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 106",
+          "extension": "168",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 108",
+          "extension": "191",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 109",
+          "extension": "115",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 115",
+          "extension": "152",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 116",
+          "extension": "114",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 118",
+          "extension": "163",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 119",
+          "extension": "217",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 127",
+          "extension": "197",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 128",
+          "extension": "195",
+          "mobile": "-"
+        },
+        {
+          "name": "OP 129",
+          "extension": "153",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "OPERATION THEATRE",
+      "contacts": [
+        {
+          "name": "OT Block Room",
+          "extension": "126",
+          "mobile": "-"
+        },
+        {
+          "name": "Lasik",
+          "extension": "161",
+          "mobile": "-"
+        },
+        {
+          "name": "OT Store",
+          "extension": "158",
+          "mobile": "-"
+        },
+        {
+          "name": "Wet Lab",
+          "extension": "202",
+          "mobile": "-"
+        },
+        {
+          "name": "OT Changing Room",
+          "extension": "200",
+          "mobile": "-"
+        },
+        {
+          "name": "ICU",
+          "extension": "201",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "NURSING",
+      "contacts": [
+        {
+          "name": "Ms. Geetha P K",
+          "extension": "138",
+          "mobile": "5057"
+        },
+        {
+          "name": "Ms. Merina Varghese",
+          "extension": "137",
+          "mobile": "5060"
+        },
+        {
+          "name": "Ward",
+          "extension": "137",
+          "mobile": "-"
+        },
+        {
+          "name": "Ward 2",
+          "extension": "135",
+          "mobile": "-"
+        },
+        {
+          "name": "Tension room",
+          "extension": "155",
+          "mobile": "-"
+        },
+        {
+          "name": "Nursing Station 3rd floor",
+          "extension": "203",
+          "mobile": "-"
+        },
+        {
+          "name": "Ms. Shilpa",
+          "extension": "143",
+          "mobile": "5062"
+        },
+        {
+          "name": "IP Coordinator Mr. Unnikrishnan",
+          "extension": "184",
+          "mobile": "5066"
+        }
+      ]
+    },
+    {
+      "name": "REFRACTION",
+      "contacts": [
+        {
+          "name": "Ms.Shaniba",
+          "extension": "-",
+          "mobile": "5073"
+        },
+        {
+          "name": "Ms.Sreeja",
+          "extension": "-",
+          "mobile": "5072"
+        }
+      ]
+    },
+    {
+      "name": "PHARMACY",
+      "contacts": [
+        {
+          "name": "Ms. Ranjusha",
+          "extension": "181",
+          "mobile": "5051"
+        },
+        {
+          "name": "Mr. Sachin",
+          "extension": "181",
+          "mobile": "-"
+        },
+        {
+          "name": "Pharmacy",
+          "extension": "134",
+          "mobile": "-"
+        },
+        {
+          "name": "Pharmacy2",
+          "extension": "127",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "OPTICALS",
+      "contacts": [
+        {
+          "name": "Ms. Geetha",
+          "extension": "123",
+          "mobile": "5021"
+        },
+        {
+          "name": "Mr. Shaju",
+          "extension": "-",
+          "mobile": "5088"
+        },
+        {
+          "name": "PRESCRIPTION",
+          "extension": "124",
+          "mobile": "-"
+        },
+        {
+          "name": "Billing",
+          "extension": "125",
+          "mobile": "-"
+        },
+        {
+          "name": "Opticals lens room",
+          "extension": "146",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "FRONT OFFICE",
+      "contacts": [
+        {
+          "name": "Mr. Abijith",
+          "extension": "183",
+          "mobile": "5039"
+        },
+        {
+          "name": "Front Office",
+          "extension": "121",
+          "mobile": "120"
+        },
+        {
+          "name": "Back office(booking)",
+          "extension": "111",
+          "mobile": ""
+        },
+        {
+          "name": "Insurance",
+          "extension": "122",
+          "mobile": "-"
+        },
+        {
+          "name": "Ms.Sushama",
+          "extension": "-",
+          "mobile": "5037"
+        },
+        {
+          "name": "Counter 8/9",
+          "extension": "182",
+          "mobile": "-"
+        },
+        {
+          "name": "Counter 11",
+          "extension": "187",
+          "mobile": ""
+        },
+        {
+          "name": "Ayushman Card Checking",
+          "extension": "170",
+          "mobile": "-"
+        },
+        {
+          "name": "Ayushman Desk",
+          "extension": "186",
+          "mobile": "-"
+        },
+        {
+          "name": "Discharge Billing",
+          "extension": "166",
+          "mobile": "-"
+        },
+        {
+          "name": "Help Desk First Floor",
+          "extension": "149",
+          "mobile": "-"
+        },
+        {
+          "name": "Help Desk Ground Floor",
+          "extension": "204",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "PATIENT WELFARE",
+      "contacts": [
+        {
+          "name": "Help Desk 1st Floor",
+          "extension": "149",
+          "mobile": "-"
+        },
+        {
+          "name": "Help Desk Ground Floor",
+          "extension": "204",
+          "mobile": "-"
+        },
+        {
+          "name": "Ms. Praveena",
+          "extension": "-",
+          "mobile": "5076"
+        },
+        {
+          "name": "Ms. Beena",
+          "extension": "-",
+          "mobile": "5056"
+        }
+      ]
+    },
+    {
+      "name": "ACCOUNTS",
+      "contacts": [
+        {
+          "name": "Mr. Gireesh Pushpananthan",
+          "extension": "105",
+          "mobile": "5038"
+        },
+        {
+          "name": "Accounts Office",
+          "extension": "107",
+          "mobile": "-"
+        },
+        {
+          "name": "Accounts Office",
+          "extension": "129",
+          "mobile": "-"
+        },
+        {
+          "name": "Accounts Office",
+          "extension": "211",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "ADMINISTRATION",
+      "contacts": [
+        {
+          "name": "Ms. Swapna Rani",
+          "extension": "106",
+          "mobile": "5035"
+        },
+        {
+          "name": "Mr. Vishal",
+          "extension": "104",
+          "mobile": "5091"
+        }
+      ]
+    },
+    {
+      "name": "HR   DEPARTMENT",
+      "contacts": [
+        {
+          "name": "Ms. Rubayath.M",
+          "extension": "148",
+          "mobile": "5015"
+        }
+      ]
+    },
+    {
+      "name": "ACADEMY",
+      "contacts": [
+        {
+          "name": "Mr. Ajmal OK",
+          "extension": "136",
+          "mobile": "5090"
+        }
+      ]
+    },
+    {
+      "name": "PUBLIC RELATIONS",
+      "contacts": [
+        {
+          "name": "Mr. Praveen Kumar K.P",
+          "extension": "110",
+          "mobile": "5018"
+        },
+        {
+          "name": "Mr. Sujesh T.P",
+          "extension": "147",
+          "mobile": "5022"
+        }
+      ]
+    },
+    {
+      "name": "EYE CARE SOCIETY",
+      "contacts": [
+        {
+          "name": "Mr. T.O. Ramachandran",
+          "extension": "109",
+          "mobile": "5000"
+        },
+        {
+          "name": "Mr. Sreejith",
+          "extension": "198",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "STORE",
+      "contacts": [
+        {
+          "name": "Printing Material",
+          "extension": "178",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "QUALITY DEPARTMENT",
+      "contacts": [
+        {
+          "name": "Ms. Prajusha",
+          "extension": "143",
+          "mobile": "5098"
+        }
+      ]
+    },
+    {
+      "name": "PROCEDURE ROOM",
+      "contacts": [
+        {
+          "name": "Contact Lens 124",
+          "extension": "219",
+          "mobile": "-"
+        },
+        {
+          "name": "Scan Room 311",
+          "extension": "117",
+          "mobile": "-"
+        },
+        {
+          "name": "Orthoptics",
+          "extension": "171",
+          "mobile": "-"
+        },
+        {
+          "name": "Lab",
+          "extension": "128",
+          "mobile": "-"
+        },
+        {
+          "name": "OCT Spectralis 46",
+          "extension": "151",
+          "mobile": "-"
+        },
+        {
+          "name": "OCT 124 B",
+          "extension": "112",
+          "mobile": "-"
+        },
+        {
+          "name": "LVA 210",
+          "extension": "207",
+          "mobile": "-"
+        },
+        {
+          "name": "FFA(B WING)",
+          "extension": "156",
+          "mobile": "-"
+        }
+      ]
+    },
+    {
+      "name": "DRIVER/ATTENDER",
+      "contacts": [
+        {
+          "name": "Mr. Subish",
+          "extension": "-",
+          "mobile": "5069"
+        },
+        {
+          "name": "Mr. Akilesh",
+          "extension": "-",
+          "mobile": "5085"
+        },
+        {
+          "name": "Mr. Jithendran",
+          "extension": "-",
+          "mobile": "5089"
+        }
+      ]
+    },
+    {
+      "name": "OTHERS",
+      "contacts": [
+        {
+          "name": "LIFT",
+          "extension": "164",
+          "mobile": "-"
+        },
+        {
+          "name": "Canteen",
+          "extension": "144",
+          "mobile": "-"
+        },
+        {
+          "name": "Conference Room",
+          "extension": "150",
+          "mobile": "-"
+        },
+        {
+          "name": "Security",
+          "extension": "139",
+          "mobile": "5050"
+        }
+      ]
+    },
+    {
+      "name": "HOUSE KEEPING",
+      "contacts": [
+        {
+          "name": "House Keeping Supervisor",
+          "extension": "173",
+          "mobile": "5074"
+        }
+      ]
+    },
+    {
+      "name": "HELP LINE",
+      "contacts": [
+        {
+          "name": "Fire",
+          "extension": "-",
+          "mobile": "5026"
+        },
+        {
+          "name": "Taxi",
+          "extension": "-",
+          "mobile": "5065"
+        },
+        {
+          "name": "KSEB Office Pottammal",
+          "extension": "-",
+          "mobile": "5027"
+        },
+        {
+          "name": "Police",
+          "extension": "-",
+          "mobile": "5025"
+        }
+      ]
+    },
+    {
+      "name": "EMERGENCY",
+      "contacts": [
+        {
+          "name": "MIMS MOBILE ICU",
+          "extension": "9847244999",
+          "mobile": "5044"
+        },
+        {
+          "name": "MIMS CASUALITY",
+          "extension": "0495-6791007",
+          "mobile": "5047"
+        },
+        {
+          "name": "MIMS MOD",
+          "extension": "8157885111",
+          "mobile": "5096"
+        },
+        {
+          "name": "MEDICAL COLLEGE CASUALITY",
+          "extension": "0495-2356531",
+          "mobile": "5024"
+        }
+      ]
+    },
+    {
+      "name": "INFECTION CONTROL",
+      "contacts": [
+        {
+          "name": "Ms. Shilpa",
+          "extension": "143",
+          "mobile": "5062"
+        }
+      ]
+    },
+    {
+      "name": "OCULOPLASTY",
+      "contacts": [
+        {
+          "name": "MS.Celia Venny",
+          "extension": "-",
+          "mobile": "5029"
+        }
+      ]
+    }
+  ]
+}
