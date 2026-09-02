@@ -79,11 +79,6 @@
           "mobile": "5009"
         },
         {
-          "name": "Dr. Dhileesh P",
-          "extension": "162",
-          "mobile": "5075"
-        },
-        {
           "name": "Dr. Devaki Devi",
           "extension": "154",
           "mobile": "5006"
@@ -254,14 +249,14 @@
           "mobile": "5058"
         },
         {
-          "name": "Mr. Nithin",
-          "extension": "157",
-          "mobile": "5077"
-        },
-        {
           "name": "Mr. Bijoy",
           "extension": "157",
           "mobile": "5084"
+        },
+        {
+          "name": "Mr. Nithin",
+          "extension": "157",
+          "mobile": "5077"
         }
       ]
     },
