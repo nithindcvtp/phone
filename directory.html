@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Telephone Directory</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f7fb;
+}
+
+header{
+background:#2b6cb0;
+color:white;
+padding:8px 0;
+text-align:center;
+}
+
+header h1{
+margin:4px 0;
+font-size:22px;
+}
+
+nav{
+background:#eaeaea;
+padding:10px;
+text-align:center;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:center;
+gap:10px;
+}
+
+nav a{
+margin:0 18px;
+text-decoration:none;
+color:#2f5e9e;
+font-weight:600;
+}
+
+nav select,
+nav input{
+padding:8px 10px;
+border-radius:6px;
+margin-left:6px;
+font-size:16px;
+}
+
+@media(max-width:600px){
+
+nav{
+padding:10px 14px;
+}
+
+nav a{
+margin:0 0 6px 0;
+width:100%;
+}
+
+nav select,
+nav input{
+margin-left:0;
+flex:1 1 140px;
+min-width:0;
+}
+
+.container{
+padding:12px;
+}
+
+.card{
+padding:14px;
+}
+
+th,td{
+padding:6px;
+font-size:13px;
+}
+
+header h1{
+font-size:18px;
+}
+
+}
+
+.container{
+width:96%;
+max-width:1800px;
+margin:auto;
+padding:20px;
+}
+
+/* FIXED GRID ALIGNMENT */
+
+.grid{
+column-count:4;
+column-gap:25px;
+}
+
+@media(max-width:1400px){
+.grid{column-count:3;}
+}
+
+@media(max-width:900px){
+.grid{column-count:2;}
+}
+
+@media(max-width:600px){
+.grid{column-count:1;}
+}
+
+.card{
+display:inline-block;
+width:100%;
+margin-bottom:25px;
+box-sizing:border-box;
+background:white;
+padding:18px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+break-inside:avoid;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+table-layout:fixed;
+}
+
+th:nth-child(1),
+td:nth-child(1){
+width:55%;
+text-align:left;
+}
+
+th:nth-child(2),
+td:nth-child(2){
+width:18%;
+text-align:center;
+}
+
+th:nth-child(3),
+td:nth-child(3){
+width:27%;
+text-align:center;
+}
+
+th{
+white-space:nowrap;
+}
+
+th,td{
+padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+th{
+background:#e9eef6;
+}
+
+mark{
+background:yellow;
+}
+
+.tel-link{
+display:inline-block;
+color:#2b6cb0;
+font-weight:600;
+text-decoration:none;
+padding:2px 8px;
+border-radius:6px;
+background:#e9f1fc;
+}
+
+.tel-link:active{
+background:#d3e5fb;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Hospital Telephone Directory</h1>
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+
+<select id="deptFilter">
+<option value="all">All Departments</option>
+</select>
+
+<input id="findBox" placeholder="Search here..." />
+
+</nav>
+
+<div class="container">
+<div class="grid" id="directoryGrid"></div>
+</div>
+
+<script>
+
+/* LOAD DIRECTORY FROM JSON */
+
+/* Base number: last digits get swapped for the 3-digit extension.
+   e.g. base "+914954086111" -> ext "101" -> "+914954086101" */
+const BASE_NUMBER = "+914954086111"
+const BASE_PREFIX = BASE_NUMBER.slice(0, -3)
+
+function buildTelHref(raw){
+
+let val = String(raw||"").trim()
+
+if(!val || val === "-") return null
+
+let digits = val.replace(/[^0-9]/g,"")
+
+if(!digits) return null
+
+if(digits.length === 3){
+/* short extension: swap onto the base number */
+return "tel:" + BASE_PREFIX + digits
+}
+
+if(digits.length === 10){
+/* already a full number, just missing +91 */
+return "tel:+91" + digits
+}
+
+if(digits.length === 11 && digits.startsWith("0")){
+/* STD-code landline like 0495-6791007 */
+return "tel:+91" + digits.slice(1)
+}
+
+if(digits.length === 12 && digits.startsWith("91")){
+return "tel:+" + digits
+}
+
+/* unrecognized format: don't guess, leave as plain text */
+return null
+
+}
+
+function extCell(raw){
+
+let href = buildTelHref(raw)
+
+if(!href) return String(raw||"")
+
+return `<a class="tel-link" href="${href}">${raw}</a>`
+
+}
+
+async function loadDirectory(){
+
+let res = await fetch("directory.json?nocache=" + Date.now())
+let data = await res.json()
+
+let grid = document.getElementById("directoryGrid")
+let filter = document.getElementById("deptFilter")
+filter.innerHTML =
+'<option value="all">All Departments</option>'
+filter.innerHTML = '<option value="all">All Departments</option>'
+
+grid.innerHTML=""
+
+data.departments.forEach(dept=>{
+
+/* Add dropdown option */
+
+filter.innerHTML += `<option value="${dept.name}">${dept.name}</option>`
+
+/* Create card */
+
+let card = document.createElement("div")
+card.className="card"
+card.dataset.dept=dept.name
+
+let html=`<h3>${dept.name}</h3>
+<table>
+<tr>
+<th>Name</th>
+<th>Ext</th>
+<th>Mobile</th>
+</tr>`
+
+dept.contacts.forEach(c=>{
+
+html+=`
+<tr>
+<td>${c.name}</td>
+<td>${extCell(c.extension)}</td>
+<td>${c.mobile}</td>
+</tr>
+`
+
+})
+
+html+="</table>"
+
+card.innerHTML=html
+
+grid.appendChild(card)
+
+})
+
+}
+
+loadDirectory()
+
+
+
+/* DEPARTMENT FILTER */
+
+document.getElementById('deptFilter').addEventListener('change',function(){
+
+document.getElementById("findBox").value=""
+
+let val=this.value
+
+document.querySelectorAll('.card').forEach(card=>{
+
+card.style.display=
+(val==='all'||card.dataset.dept===val)
+?'block':'none'
+
+})
+
+document.querySelectorAll("tr").forEach(r=>r.style.display="")
+document.querySelectorAll("mark").forEach(m=>{
+m.replaceWith(m.textContent)
+})
+
+})
+
+
+
+/* SEARCH FUNCTION */
+
+function findText(){
+
+let text=document.getElementById("findBox").value.toLowerCase()
+
+document.querySelectorAll("mark").forEach(m=>{
+m.replaceWith(m.textContent)
+})
+
+if(!text){
+
+document.querySelectorAll(".card")
+.forEach(c=>c.style.display="block")
+
+document.querySelectorAll("tr")
+.forEach(r=>r.style.display="")
+
+return
+
+}
+
+document.querySelectorAll(".card").forEach(card=>{
+
+let dept=card.querySelector("h3").innerText.toLowerCase()
+
+if(dept.includes(text)){
+
+card.style.display="block"
+
+card.querySelectorAll("tr")
+.forEach(r=>r.style.display="")
+
+return
+
+}
+
+let rowMatch=false
+
+card.querySelectorAll("tr").forEach(row=>{
+
+if(row.querySelector("th")) return
+
+let content=row.innerText.toLowerCase()
+
+if(content.includes(text)){
+
+rowMatch=true
+row.style.display=""
+
+row.querySelectorAll("td").forEach(td=>{
+
+/* if this cell holds a tap-to-call link, highlight inside
+   the link itself so the href isn't lost */
+let target = td.querySelector("a.tel-link") || td
+
+let original = target.textContent
+
+if(original.toLowerCase().includes(text)){
+
+target.innerHTML = original.replace(
+new RegExp(text,"gi"),
+match=>"<mark>"+match+"</mark>"
+)
+
+}
+
+})
+
+}else{
+
+row.style.display="none"
+
+}
+
+})
+
+card.style.display=rowMatch?"block":"none"
+
+})
+
+}
+
+document.getElementById("findBox")
+.addEventListener("keyup",findText)
+
+</script>
+
+
+
+</body>
+</html>
